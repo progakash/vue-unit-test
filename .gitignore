@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+package.json
+pnpm-lock.yaml
+vite.config.js
+vitest.config.ts
 
 # Editor directories and files
 .vscode/*
