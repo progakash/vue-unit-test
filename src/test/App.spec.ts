@@ -1,7 +1,8 @@
-import { mount } from "@vue/test-utils";
+import { mount, shallowMount } from "@vue/test-utils";
 import { expect, it } from "vitest";
 import App from '../App.vue'
 
+//Mount
 it('should render the content of "Main.vue" component', () => {
 
     /**
@@ -12,4 +13,15 @@ it('should render the content of "Main.vue" component', () => {
     const instance = mount(App);
 
     expect(instance.html()).toContain('Vite and Vue logos')
+})
+
+//shallowMount
+it("should render the content of App component not display child component", () => {
+    const instance = shallowMount(App);
+
+    //console.log(instance.html())
+
+    //expect(instance.html()).toContain("Vite and Vue logos"); //
+
+    expect(instance.html()).toContain("Anaya");
 })

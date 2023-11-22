@@ -10,3 +10,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Mount
 
 - Render component with child component
+
+## shallowMount
+
+- Render only component; not child component

@@ -12,6 +12,7 @@ import Main from './components/Main.vue'
     </a>
   </div>
   <Main msg="Vite + Vue" />
+  <p>Hello, Anaya</p>
 </template>
 
 <style scoped>
