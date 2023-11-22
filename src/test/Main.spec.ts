@@ -14,7 +14,7 @@ it('should render msg property', () => {
     //console.log(instance.find('h1').text())
 })
 
-//white box testing
+//White Box testing
 it('should increment count when the increment method is called', () => {
     const instance = mount(Main);
 
@@ -27,4 +27,14 @@ it('should increment count when the increment method is called', () => {
     instance.vm.increment();
 
     expect(instance.vm.count).toBe(1)
+})
+
+//Black Box Testing
+it('should increment the count and display it', async () => {
+    const instance = mount(Main);
+
+    const button = instance.find('button');
+    await button.trigger('click'); 
+    
+    expect(button.text()).toBe('count is 1')
 })
